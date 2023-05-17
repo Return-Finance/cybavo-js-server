@@ -44,10 +44,10 @@ Refer to [here](https://github.com/CYBAVO/SOFA_MOCK_SERVER#query-api-token-statu
 
 ### Setup configuration
 
->	Configure CYBAVO API server URL in mockserver.conf.json
+>	Configure CYBAVO API server URL as environment variable
 
 ```
-"api_server_url": "BACKEND_SERVER_URL"
+"API_SERVER_URL": "BACKEND_SERVER_URL"
 ```
 
 ### Put wallet API code/secret into mock server
