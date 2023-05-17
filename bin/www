@@ -10,8 +10,8 @@ var http = require('http');
 const cfg = require('../models/config');
 
 (function() {
-  if (cfg.api_server_url === '') {
-    console.error('--- NOTICE! api_server_url is EMPTY, please configure it in mockserver.conf.json to run the mock server. ---\n\n');
+  if (process.env.API_SERVER_URL === '') {
+    console.error('--- NOTICE! API_SERVER_URL env var is EMPTY, please configure it to run the mock server. ---\n\n');
     process.exit(1);
   }
 })();

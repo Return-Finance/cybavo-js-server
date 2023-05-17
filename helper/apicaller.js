@@ -74,7 +74,7 @@ module.exports.makeRequest = async function (targetID, method, api, params, post
   }
   const r = rs.randomString(8);
   const t = Math.floor(Date.now()/1000);
-  let url = `${cfg.api_server_url}${api}?t=${t}&r=${r}`;
+  let url = `${process.env.API_SERVER_URL}${api}?t=${t}&r=${r}`;
   if (!!params) {
     url += `&${params.join('&')}`;
   }
